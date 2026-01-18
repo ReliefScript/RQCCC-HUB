@@ -1,3 +1,8 @@
+-- Services
+local HttpService = game:GetService("HttpService")
+local StarterGui = game:GetService("StarterGui")
+
+-- Loader
 local Hub = {
     [428375933] = "TheLegendofTheBoneSwordRPG"
 }
@@ -5,7 +10,7 @@ local Hub = {
 local Id = game.PlaceId
 
 local function Notify(Text)
-	game:GetService("StarterGui"):SetCore("SendNotification", {
+	StarterGui:SetCore("SendNotification", {
 		Title = "RQCCC HUB",
 		Text = Text,
 		Duration = 10,
@@ -27,6 +32,7 @@ if not Found then
     Notify("Game not found. Discord copied to clipboard. Join for more scripts.")
 end
 
+-- Discord
 if setclipboard then
 	setclipboard("https://discord.com/invite/EbhtGYbuTa")
 end
