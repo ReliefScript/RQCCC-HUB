@@ -218,7 +218,7 @@ local function GetEnemies(WeaponDamage)
 		if not Hum then continue end
 
 		if Hum.MaxHealth > (WeaponDamage * 3000) then continue end
-		if Hum.MaxHealth < (WeaponDamage / 300) then continue end
+		if Hum.MaxHealth < (WeaponDamage / 3000) then continue end
 		if Hum.Health <= 0 then Enemy:Destroy() continue end
 		
 		local Root = Enemy:FindFirstChild("HumanoidRootPart")
