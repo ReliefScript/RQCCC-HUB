@@ -50,7 +50,7 @@ end
 -- Ui
 local function Notify(Text)
 	StarterGui:SetCore("SendNotification", {
-		Title = "Rqccc's Script",
+		Title = "RQCCC HUB",
 		Text = Text,
 		Duration = 10,
 		Button1 = "OK"
