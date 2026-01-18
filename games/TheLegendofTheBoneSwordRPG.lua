@@ -333,7 +333,7 @@ local function CheckPlayer(Player)
 	Notify(`{Player.Name}: {Rank}`)
 end
 
-Game:Toggle("ModDetect", function(Toggled)
+GameTab:Toggle("ModDetect", function(Toggled)
 	if Toggled then
 		for _, Player in Players:GetPlayers() do
 			CheckPlayer(Player)
