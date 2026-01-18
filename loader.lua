@@ -5,8 +5,8 @@ local Hub = {
 local Id = game.PlaceId
 
 local function Notify(Text)
-	StarterGui:SetCore("SendNotification", {
-		Title = "Rqccc's Script",
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "RQCCC HUB",
 		Text = Text,
 		Duration = 10,
 		Button1 = "OK"
